@@ -1,0 +1,197 @@
+header{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+/* ==========================================================================
+   1. ESTILOS GERAIS (RESET E CORPO DO SITE)
+   ========================================================================== */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #9ac49c; /* Um fundo cinza bem claro para não cansar os olhos */
+    color: #333333;            /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+/* ==========================================================================
+   2. CABEÇALHO (HEADER)
+   ========================================================================== */
+header {
+    background-color: #0b522b; /* Verde escuro lembrando um gramado de futebol */
+    color: #ffffff;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* ==========================================================================
+   3. CONTEÚDO PRINCIPAL (MAIN)
+   ========================================================================== */
+main {
+    max-width: 1200px;  /* Limita a largura para o site não ficar espalhado em telas gigantes */
+    margin: 30px auto;  /* Centraliza a página na tela */
+    padding: 0 20px;
+}
+
+/* Título principal do main e subtítulos */
+main h1 {
+    color: #0b522b;
+    text-align: center;
+}
+
+main p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* ==========================================================================
+   4. SEÇÕES POR ESTADO (LAYOUT)
+   ========================================================================== */
+section {
+    margin-bottom: 40px;
+}
+
+section h2 {
+    color: #000000;
+    border-bottom: 3px solid #ffe600; /* Linha estilizada abaixo do nome do Estado */
+    padding-bottom: 5px;
+    font-size: 1.8rem;
+}
+
+/* Organiza os times de cada estado lado a lado se a tela for grande */
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* ==========================================================================
+   5. OS CARDS DOS TIMES (ARTICLE)
+   ========================================================================== */
+article {
+    background-color: #ffffff;
+    border-left: 5px solid #27ae60; /* Detalhe em verde na lateral do card */
+    padding: 20px;
+    border-radius: 8px;            /* Deixa as bordas arredondadas */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05); /* Sombra leve para dar efeito de relevo */
+    transition: transform 0.2s ease; /* Efeito suave ao passar o mouse */
+}
+
+/* Efeito visual quando o usuário passa o mouse por cima do time */
+article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+article h3 {
+    margin-top: 0;
+    color: #2c3e50;
+    font-size: 1.4rem;
+}
+
+/* Linha divisória */
+hr {
+    border: 0;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 40px 0;
+}
+
+.palmeiras {
+    border-left: 6px solid #0b522b;
+}
+
+.saopaulo {
+    border-left: 6px solid #ff0000;
+}
+
+.corinthians {
+    border-left: 6px solid #000000;
+}
+
+.santos{
+    border-left: 6px solid #ffffff;
+}
+
+.flamengo {
+    border-left: 6px solid #ff0000;
+}
+
+.vasco {
+    border-left: 6px solid #000000;
+}
+
+.fluminense {
+    border-left: 6px solid #ff9100;
+}
+
+.botafogo {
+    border-left: 6px solid #000000;
+}
+
+.gremio {
+    border-left: 6px solid #0077ff;
+}
+
+.internacional {
+    border-left: 6px solid #ff0000;
+}
+
+.cruzeiro {
+    border-left: 6px solid #0004ff;
+}
+
+.galo {
+    border-left: 6px solid #000000;
+}
+/* ==========================================================================
+   6. RODAPÉ (FOOTER)
+   ========================================================================== */
+footer {
+    background-color: #0b522b; /* O mesmo verde escuro do cabeçalho */
+    color: #ffffff;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 50px; /* Dá um espaço entre o último time e o fim da página */
+}
+
+footer p {
+    margin: 0 0 15px 0;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Container que segura as redes sociais */
+.redes-sociais {
+    display: block; /* Garante que fique posicionado corretamente */
+}
+
+/* Estilo de cada link de rede social */
+.redes-sociais a {
+    color: #ffffff;
+    text-decoration: none; /* Remove aquele sublinhado padrão de link */
+    margin: 0 15px;       /* Dá um espaço horizontal entre os links */
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+/* Efeito quando você passa o mouse por cima do link */
+.redes-sociais a:hover {
+    background-color: #ffffff; /* O fundo fica branco */
+    color: #0b522b;            /* O texto fica verde */
+}
+.redes-sociais a i {
+    margin-right: 8px; /* Dá um espaço de 8 pixels entre o ícone e a palavra */
+    font-size: 1.2rem; /* Deixa o ícone levemente maior que o texto */
+}
